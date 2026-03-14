@@ -3,7 +3,9 @@ import pandas as pd
 import pickle
 
 #Load the model 
-model=pickle.load(open("model.pkl","rb"))
+with open("model.pkl","rb") as f:
+    model = pickle.load(f)
+
 
 #create the app
 
